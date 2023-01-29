@@ -13,8 +13,6 @@ export default class App extends React.Component {
     this.getOrientation();
   }
 
-  const { orientation } = "Portrait";
-
   getOrientation() {
     const { mywidth, myheight } = Dimensions.get('window');
   }
