@@ -14,7 +14,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import {StatusBar} from 'expo-status-bar';
 
 import HomeScreen from './app/Myhome';
-import FlyScreen from './app/MyflyScreen';
+import FlyScreen from './app/Myfly';
+import OrientScreen from './app/MyOrient';
 
 
 const Stack = createNativeStackNavigator();
@@ -24,7 +25,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Myhome" component={HomeScreen} />
-        <Stack.Screen name="MyflyScreen" component={FlyScreen} />
+        <Stack.Screen name="Myfly" component={FlyScreen} />
+        <Stack.Screen name="MyOrient" component={OrientScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
